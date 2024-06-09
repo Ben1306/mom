@@ -13,7 +13,8 @@ import BlueLys from "./images/blue_lys.png";
 import YellowGolFlower from "./images/yellow_goldflower.png";
 import RedSunflower from "./images/red_sunflower.png";
 import GreenDaisy from "./images/green_daisy.png";
-
+import TodayCitation from "./components/todayCitation";
+import {messages} from "./components/messages"
 
 function App() {
 
@@ -24,6 +25,11 @@ function App() {
             targetRef.current.scrollIntoView({behavior: 'smooth', block: "center"});
         }
     };
+
+    function getRandomMessage() {
+        const randomIndex = Math.floor(Math.random() * messages.length);
+        return messages[randomIndex];
+    }
 
     return (
         <div className="flex flex-col items-center bg-pink-300 gap-24">
@@ -39,6 +45,7 @@ function App() {
                 ]}
             />
             <Hero/>
+            <TodayCitation citation={getRandomMessage()}/>
             <GoToText onClick={scrollToComponent}/>
             <HappyBirthday targetRef={targetRef}/>
             <Paragraph title="Boubou" text={benjaminText} image={Penguin} flower1={BlueLys} flower2={YellowGolFlower}/>
