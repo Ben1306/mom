@@ -19,9 +19,9 @@ export default function Hero(props) {
                 <img src={Sun} className="h-[500px] w-144 animate-sun"
                      alt={"sun"}/>
             </div>
-            <Title title={"Best"} className={"mr-80 relative z-10"} delay={0}/>
-            <Title title={"Mom"} className={"relative z-10"} delay={2}/>
-            <Title title={"Ever!"} className={"ml-80 relative z-10"} delay={1}/>
+            <Title title={"Best"} className={"mr-80 relative z-10"} delay={5}/>
+            <Title title={"Mom"} className={"relative z-10"} delay={7}/>
+            <Title title={"Ever!"} className={"ml-80 relative z-10"} delay={6}/>
 
             <Flower className={"absolute top-[10%] left-[40%]"} delay={7} image={BlueSunflower}
                     imgClassName={"w-16 animate-spin-flower"}/>
