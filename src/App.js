@@ -41,7 +41,7 @@ function App() {
             <Hero/>
             <GoToText onClick={scrollToComponent}/>
             <HappyBirthday targetRef={targetRef}/>
-            <Paragraph title="Benji" text={benjaminText} image={Penguin} flower1={BlueLys} flower2={YellowGolFlower}/>
+            <Paragraph title="Boubou" text={benjaminText} image={Penguin} flower1={BlueLys} flower2={YellowGolFlower}/>
             <Paragraph title="Alex" text={alexText} image={Fox} flower1={GreenDaisy} flower2={RedSunflower}/>
             <img className="w-[600px] rounded-xl mb-24" src={Us} alt="us"/>
         </div>
